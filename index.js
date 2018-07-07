@@ -20,8 +20,8 @@ app.get('/expiredUsers', async (req, res) => {
     res.status(200).json(expiredUsers)
 })
 
-app.get('/jenkinsTest2', (req, res) => {
-    res.status(200).send('Looks like Jenkins is Working bOy!!!!!!!!!!!!!!!!!')
+app.get('/arian', (req, res) => {
+    res.status(200).send('Arian injast!!!')
 })
 
 app.post('/createUser', async (req, res) => {
