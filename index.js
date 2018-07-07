@@ -20,6 +20,10 @@ app.get('/expiredUsers', async (req, res) => {
     res.status(200).json(expiredUsers)
 })
 
+app.get('/jenkinsTest', (req, res) => {
+    res.status(200).send('Looks like Jenkins is Working bOy!!!!!!!!!!!!!!!!!')
+})
+
 app.post('/createUser', async (req, res) => {
     let {secret, username, password, days} = req.body
     if(secret === config.adminSecret){
